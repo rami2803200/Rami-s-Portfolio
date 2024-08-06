@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+<<<<<<< HEAD
 const svgToDataUri = require("mini-svg-data-uri");
 
 const colors = require("tailwindcss/colors");
@@ -25,6 +26,15 @@ const config = {
         "2xl": "1400px",
       },
     },
+=======
+const config: Config = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+>>>>>>> 2a0d10b2a874ec7777a7cb479dc8ded143410c0a
     extend: {
       colors: {
         black: {
@@ -160,6 +170,7 @@ const config = {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
+<<<<<<< HEAD
     },
   },
   plugins: [
@@ -201,4 +212,12 @@ function addVariablesForColors({ addBase, theme }: any) {
   });
 }
 
+=======
+    
+
+    },
+  },
+  plugins: [],
+};
+>>>>>>> 2a0d10b2a874ec7777a7cb479dc8ded143410c0a
 export default config;
